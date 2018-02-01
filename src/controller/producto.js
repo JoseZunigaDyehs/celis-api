@@ -66,7 +66,7 @@ function remove(req,res){
 }
 
 function findAll(req,res){
-  Producto.find({ '_id': req.params.id }, (err, producto) => {
+  Producto.find((err, producto) => {
     if (err) {
       res.status(500).send(err);
     }

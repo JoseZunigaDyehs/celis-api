@@ -2,9 +2,14 @@
   "name": "celisApi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/db.js",
   "scripts": {
+    "start": "nodemon db.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseZunigaDyehs/celis-api.git"
   },
   "keywords": [],
   "author": "Jose Zuniga",
@@ -14,5 +19,8 @@
     "express": "^4.16.2",
     "mongoose": "^5.0.2",
     "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
   }
 }

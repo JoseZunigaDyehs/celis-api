@@ -19,7 +19,7 @@ function create(req, res) {
 }
 
 function findById(req, res) {
-  Rol.findOne({ '_id': req.params.id }, (err, rol) => {
+  Rol.findOne({ 'rol': req.params.rol }, (err, rol) => {
     if (err) {
       res.status(500).send(err);
     }
@@ -66,7 +66,7 @@ function remove(req,res){
 }
 
 function findAll(req,res){
-  Rol.find({ '_id': req.params.id }, (err, roles) => {
+  Rol.find((err, roles) => {
     if (err) {
       res.status(500).send(err);
     }
